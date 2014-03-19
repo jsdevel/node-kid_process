@@ -1,6 +1,6 @@
 {
   "name": "kid_process",
-  "version": "0.5.1",
+  "version": "0.5.2",
   "description": "A simpler version of child_process.",
   "main": "lib/index.js",
   "scripts": {
