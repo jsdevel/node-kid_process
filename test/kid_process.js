@@ -11,21 +11,21 @@ describe('kid_process', function() {
   describe('terminated event', function() {
     it('is emitted when there is an error spawning the script', function(done) {
       sut('node', ['asdfasdf']).on('terminated', function(code){
-        code.should.be.above(1);
+        code.should.be.above(0);
         done();
       });
     });
 
     it('is emitted for scripts that throw errors', function(done) {
       sut('node', [programs.throwsError]).on('terminated', function(code){
-        code.should.be.above(1);
+        code.should.be.above(0);
         done();
       });
     });
 
     it('is emitted for scripts that exit abruptly', function(done) {
       sut('node', [programs.exitsAbruptly]).on('terminated', function(code){
-        code.should.be.above(1);
+        code.should.be.above(0);
         done();
       });
     });

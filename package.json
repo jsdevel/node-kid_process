@@ -1,10 +1,11 @@
 {
   "name": "kid_process",
-  "version": "0.5.2",
+  "version": "0.5.3",
   "description": "A simpler version of child_process.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "mocha -w 'test/**/*.js' 'lib/**/*.js'"
+    "mocha": "mocha -w",
+    "test": "mocha 'test/**/*.js' 'lib/**/*.js'"
   },
   "repository": {
     "type": "git",
