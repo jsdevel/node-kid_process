@@ -1,6 +1,6 @@
 {
   "name": "kid_process",
-  "version": "0.5.3",
+  "version": "0.5.4",
   "description": "A simpler version of child_process.",
   "main": "lib/index.js",
   "scripts": {
@@ -12,6 +12,10 @@
     "url": "https://github.com/jsdevel/node-kid_process.git"
   },
   "keywords": [
+    "child_process",
+    "child",
+    "process",
+    "fork",
     "spawn",
     "wrapper",
     "normalizer"
