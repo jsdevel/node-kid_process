@@ -5,7 +5,7 @@ kid_process
 Deal with child_process like you would a kid.
 
 ##Highlights
-1. Forget about `disconnect`, `error`, `close`, `exit`, listen for `terminated` instead.
+1. Forget about `disconnect`, `error`, `close`, and `exit`.  Listen for `terminated` instead.
 2. `error` events are ignored rather than exiting your parent process.
 3. Same interface as spawn and fork.  If your command ends in `.js`, then fork is used.
 4. The kill method does nothing once an event from item 1 is emitted.  This is 
